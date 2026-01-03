@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Quicksand:wght@300..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+main{
+    overflow: hidden;
+}
+#home{
+    border-bottom: 2px solid #e4b956;
+    color: rgb(234, 76, 23);
+}
+.imag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imag p{
+    text-align: center;
+    margin-left: 110px;
+}
+header{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    animation: w 6.4s ease .2s infinite forwards;
+}
+@keyframes w{
+    0%{
+    background: url(images/contact.jpeg) center center/cover no-repeat;
+    }
+    25%{
+        background: url(images/OIP5.webp) center center/cover no-repeat;
+
+    }
+    50%{
+    background: url(images/OIP.jfif) center center/cover no-repeat;
+    }
+    75%{
+    background: url(images/home_bg.jpeg) center center/cover no-repeat;
+    }
+    90%{
+        background: url(images/pp.webp) center center/cover no-repeat;
+    }
+        100%{
+    background: url(images/contact.jpeg) center center/cover no-repeat;
+    }
+    
+
+
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.4);
+}
+header *{
+    z-index: 5;
+}
+header #navbar img{
+    width: 150px;
+    margin-left: 100px;
+}
+header #navbar{
+    display: flex;
+    justify-content: space-between;
+}
+header #navbar ul{
+    list-style: none;
+    display: flex;
+    margin-right: 100px;
+}
+#navbar ul li{
+    padding: 15px 30px;
+    margin-top: 30px;
+}
+ a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(247, 245, 243);
+    font-size: 27px;
+}
+a:hover{
+    border-bottom: 2px solid #e4b956;
+    color: rgb(234, 76, 23);
+    transition: .5s;
+}
+
+header .container{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h1 {
+    color: white;
+    font-size: 40px;
+}
+.container p{
+    color: white;
+    margin: 20px 0 4px;
+    font-size: 20px;
+}
+.primary-text{
+    color: #dda223;
+}
+p .primary-text{
+    font-weight: 700;
+}
+.primary2{
+    color: rgba(160, 172, 158, 0.814);
+    font-weight: 400;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+
+}
+.btn-primary{
+    margin-top: 10px;
+    color: white;
+    border: 1px solid white;
+}
+.btn-secondary{
+    color: #fff;
+    margin-top: 2rem;
+    background: #383848;
+    height: 50px;
+    width: 13vw;
+    position: absolute;
+    bottom: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+.btn:hover{
+    background: #f2c25a;
+    color: black;
+    transition: .5s;
+
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+#about{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    position: relative;
+    overflow: hidden;
+}
+#about .title ,
+#offer .title,
+#menu .title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+#about h2 ,
+#offer h2,
+#menu h2,
+#gallery h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#about h2,
+#menu h2{
+    color: #383848;
+
+}
+.title p{
+    font-size: 17px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+#about .about-content{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+#about img{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 50px;
+
+}
+.about-content p{
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+/*offers start*/
+#offer{
+    height: 80vh;
+    background: url(images/offer-background.jpg) center center/cover fixed;
+    overflow: hidden;
+}
+#offer .offer-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+#offer h2{
+    color:#dda223;
+}
+#offer img{
+    width: 200px;
+    margin-top: 7px;
+}
+#offer h3{
+    font-size: 25px;
+    margin: 15px 0;
+}
+#offer p,
+#menu p{
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+#offer span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+/*offer end*/
+/*menu start*/
+#menu{
+    background: #f4f4f4;
+    padding: 5rem 0;
+    overflow: hidden;
+}
+#menu .menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu p{
+    color: #383848;
+    font-weight: 600;
+}
+#menu .menu-items .menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+
+}
+#menu .menu-items .menu-item img{
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 40px;
+
+}
+#menu .menu-items h3{
+    color: #383848;
+    border-bottom: 1px dashed #c2bdbd;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+#menu .menu-items span{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#menu .btn{
+    background: #e4b956;
+    color: #fff;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    margin: 20px auto 0;
+}
+#menu .btn:hover{
+    background: #383848;
+    transition: .5s;
+}
+/* menu end */
+/* daytime start */
+#daytime{
+    background:url(images/daytime_bg.jpeg) center center/cover fixed no-repeat;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+#daytime .daytime-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+#daytime .daytime-items .daytime-item h3{
+    font-size: 32px;
+    margin: 20px 0 10px;
+}
+#daytime .daytime-items .daytime-item p{
+    font-weight: 500;
+}
+/* gallery start */
+#gallery {
+    background: url(images/offer-background.jpg) center center/cover no-repeat;
+    padding: 8rem 0 6rem;
+}
+#gallery .img-gallery img{
+    width: 340px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.9;
+
+}
+#gallery .img-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#gallery .img-gallery img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#gallery h2 {
+    text-align: center;
+    color: #fff;
+}
+/* gallery end */
+/* contact start */
+#contact {
+    padding: 5rem 0;
+    background: #f4f4f4;
+}
+#contact .container{
+    max-width: 900px;
+}
+#contact .contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contact .contact-content .contact-info{
+    width: 50%;
+}
+#contact .contact-content .contact-info div{
+    margin: 30px 0;
+    line-height: 1.7;
+}
+#contact .contact-content .contact-info h3{
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 20px;
+}
+#contact .contact-content .contact-info p{
+    color: #9a9a9a;
+}
+#contact .contact-content .contact-info i{
+    color: #e4b956;
+    margin-right: 5px;
+}
+#contact .contact-content .contact-info .f{
+    width: 50px;
+    color: #fff;
+    background: #383848;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+}
+#contact .contact-content .contact-info  .f:hover{
+    background: #dda223;
+    color: #383848;
+    transition: .5s;
+    cursor: pointer;
+}
+#contact .contact-content form{
+    width: 50%;
+}
+#contact input,
+#contact textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background: #e3e2dd;
+}
+#contact .btn{
+    background: #e4b956;
+    color: #fff;
+}
+#contact .btn:hover{
+    background-color: #383848;
+    transition: .5s;
+    cursor: pointer;
+}
+/* contact end */
+/* footer start */
+#footer{
+    background: #383848;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+}
+#footer a{
+    color: #050505;
+    font-size: 15px;
+}
+@media (max-width:945px) {
+    header #navbar{
+        align-items: center;
+        margin: auto;
+    }
+    header #navbar img{
+    width: 300px;
+    margin-left: 40px;
+}
+header #navbar ul{
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+#navbar ul li a ,
+#navbar p span{
+    font-size: 45px;
+}  
+}
